@@ -1,14 +1,4 @@
-# 云笔记
-> 用该项目做毕设的小朋友，请点个star&fork！
 
-> 这是一个模仿云笔记的项目，使用Bmob云后端提供诸如注册、登录、数据保存等服务，项目中联系使用了RxJava来处理异步任务，Logger作为调试日志工具，ORM框架使用GreenDAO。
-
-# 注意
-2018/12/17 关于在 Android 8.0 出现异常的问题是因为本项目有做动态权限与8.0适配！
-
-2016/10/29 重新申请了Bmob云后台。
-
-2016/10/25 手滑删除了bmob的后端，想要测试的童鞋，可以自己申请一个bmob后端云，然后新建一个Note表（参照Note类完成），然后再Constants类中修改APPID的值即可。
 
 ##功能：
 
@@ -44,37 +34,6 @@
 
 ---
 
-##更新日志：
-
-- 16/10/13：彻底修复了本地与云端的同步问题
-- 16/10/12：完善了RxJava处理笔记保存、笔记同步到bmob的逻辑
-- 16/10/11：简单实现了添加视频、图片的功能
-- 16/09/20：增加了查看、编辑、删除等功能
-- 16/09/10：测试了新增bmob实例
-- 16/09/06：使用自定义view来实现tab渐变切换，完成了ViewPager+Fragment+TabView的切换，在Fragment中接入了LRecyclerView
-- 16/09/02：测试了bmob与greendao的配合
-- 16/09/01：接入bmob后端云，完成注册登录逻辑
-- 16/08/31：完成了部分ui的设计
 
 
-##依赖列表：
-
-	//一些支持库
-	compile 'com.android.support:appcompat-v7:24.2.0'
-    compile 'com.android.support:design:24.2.0'
-    compile 'com.android.support:recyclerview-v7:24.2.0'
-    compile 'com.android.support:cardview-v7:24.2.0'
-	compile 'com.android.support:support-v4:24.2.0'
-	//一个好用的RecycleView封装
-    compile 'com.github.jdsjlzx:LRecyclerView:1.0.9'
-	//view注入框架
-    compile 'com.jakewharton:butterknife:8.4.0'
-	//ORM框架
-    compile 'org.greenrobot:greendao:3.0.1'
-	//日志
-    compile 'com.orhanobut:logger:1.15'
-	//实际没用使用的EventBus
-    compile 'org.greenrobot:eventbus:3.0.0'
-	//bmob后端云
-    compile 'cn.bmob.android:bmob-sdk:3.5.0'
     
